@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    outline: none;
+}
+body
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: #393737;
+    display: grid;
+    place-items: center;
+}
+#main-container{
+    text-align: center;
+    height: 170px;
+    display: block;
+    
+}
+.menu{
+    background-color:rgba(12, 123, 114, 0.734);
+    width: 500px;
+    height: 400px;
+    border-bottom: solid 0.5px;
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
+}
+.camera
+{
+    width:20px;
+    position:absolute ;
+    height:20px;
+    background-color:lightgrey;
+    border-radius:50%;
+    border-style:double ;
+    left: 700px;
+    top: 200px;
+}
+
+.s-image{
+    width: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    position: absolute;
+    left: 150px;
+    top: 250px;
+    transition: width 250 ease, height 250ms ease;
+    
+}
+.s-image:hover{
+    width: 180px;
+}
+.s-image:active{
+    width: 170px;
+}
+
+#lens
+{
+    width:10px;
+    position:absolute ;
+    height:10px;
+    background-color:rgb(3, 137, 23);
+    border-radius:50%;
+    left:3.5px;
+    top:3.5px;
+    animation:two 6s infinite ;
+    transform: rotateY (40deg);
+  
+  animation-direction: alternate;
+    
+    
+}
+@keyframes two
+{
+    0%
+    {
+        transform:rotateY (30deg);
+    }
+    20% {
+    transform: rotateX(30deg);
+  }
+  
+  
+    40%{
+      transform: rotateY(50deg);
+  }
+  50%{
+      transform: rotateX(50deg);
+  }
+  
+  75% {
+    transform: rotateX(70deg);
+  }
+    100%
+    {
+        transform:rotateY (30deg);
+    }
+}
+
+#light
+{
+    height:5px;
+    width:5px;
+    border-radius:50%;
+    border-style:solid;
+    border-color:rgb(251, 10, 10);
+    border-width:2px;
+    position:absolute ;
+    top:3.5px;
+    left:22px;
+    animation: blr 0.5s infinite;
+}
+@keyframes blr {
+  0% {background-color: #FF0000;}
+  
+  100% {background-color: green;}
+}
+
+.title {
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 2vw;
+    text-transform: uppercase;
+    left: 520px;
+    top: 230px;
+    
+  }
+  .title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+#indictr
+{
+    height:25px;
+    width:200px;
+    background-color:green;
+    left:60px;
+    position:absolute;
+    top:6px;
+    border-style:solid;
+    border-width:2.5px;
+    animation: clr 0.5s infinite;
+
+}
+@keyframes clr {
+  0% {background-color:#7CFC00 ;}
+  
+  100% {background-color: grey;}
+}
+#credit
+{
+    position:absolute ;
+    width:160px;
+    height:16px;
+    top:7px;
+    left:15px;
+    border-color:black;
+    background-color:blue;
+    border-width:85px;
+    border-style:solid;
+    border-width:3px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    
+}
+#card2
+{
+    position:absolute ;
+    width:180px;
+    height:7px;
+    background-color:grey;
+    top:4px;
+    left:5px;
+    border-color:rgb(0, 0, 0);
+    border-width:5px;
+    border-style:outset;
+    overflow:hidden;
+}
+.card
+{
+    position:absolute ;
+    width:340px;
+    height:40px;
+    background-color:darkgrey;
+    left: 550px;
+    top: 530px;
+    right:200px;
+    border-color:black;
+    border-width:5px;
+    border-style:outset;
+} 
+
+/*pincode*/ 
+.container {
+    display: flex;
+    position: absolute;
+    top: 380px;
+}
+#pin-code{
+    position: absolute;
+    top: 300px;
+    left: 646px;
+    font-size: 40px;
+    font-family: Lobster;
+    color: #101201;
+}
+.num {
+    color: #fff;
+    background-color: transparent;
+    width: 50px;
+    text-align: center;
+    outline: none;
+    margin: 0 1rem;
+    font-size: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: .5rem;
+    color: rgba(0, 255, 0, .5);
+}
+.space {
+    width: 1rem;
+}
+.num:focus,
+.num:valid {
+    box-shadow: 0 0 .5rem rgba(0, 255, 0, .5),
+                inset 0 0 .5rem rgba(0, 255, 0, .5);
+    border-color: rgba(0, 255, 0, .5);
+}

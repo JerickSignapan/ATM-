@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atm.css">
+    <script src="atm.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,300;0,500;1,100&display=swap" rel="stylesheet">
+    <title>ATM</title>
+</head>
+
+<body>
+    <div id="main-container">
+
+        <div class="menu portal">
+            <div class="menu camera">
+                <div id="lens"></div>
+                <div id="light"></div>
+            </div>
+            <div class="menu portal">
+                <h2 class="title">
+                    <span class="title-word title-word-1">insert</span>
+                    <span class="title-word title-word-2">your</span>
+                    <span class="title-word title-word-3">atm</span>
+                    <span class="title-word title-word-4">card</span>
+            </div>
+        </div>
+
+        <form action="">
+            <h3 id="pin-code">PIN-CODE</h3>
+            <div class="container">
+                <input type="text" class="num" maxlength="1" required>
+                <input type="text" class="num" maxlength="1" required>
+                <input type="text" class="num" maxlength="1" required>
+                <div class="space"></div>
+                <input type="text" class="num" maxlength="1" required>
+                <input type="text" class="num" maxlength="1" required>
+                <input type="text" class="num" maxlength="1" required>
+            </div>
+        </form>
+
+        <div class="menu card">
+            <div id="indictr">
+                <div id="card2">
+                </div>
+                <div id="credit"></div>
+            </div>
+        </div>
+        
+        <div> <img src="img/card.png" id="img-to-drag" class="s-image" alt="card"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/draggabilly/3.0.0/draggabilly.pkgd.min.js" integrity="sha512-hbEWVzVt2yK7kQmJ1NZirxxO0NPtE4W09fT4f9Emem/n0rMPFHlLbuLcUcLNrtUGWGoQ8qGvKDVJnRRuCzjeZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
+
+
+<!-- <div class="menu camera">
+            <div id="lens"></div>
+            <div id="light"></div>
+        </div>
+
+        <div class="menu card">
+            <div id="indictr">
+
+                <div id="card2">
+
+                </div>
+
+                <div id="credit"></div>
+            </div>
+        </div> -->
